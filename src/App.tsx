@@ -1,24 +1,58 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React,{useState} from 'react';
+import Events from './components/Events';
+import Summary from './components/Summary';
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import moment from 'moment';
 
+const events=[
+  {
+      day:'October 9th 2021',
+      time:'1 PM',
+      entry:'Artificial Intelligence',
+      assigned:'Advin Netto'
+
+  },
+{
+  day:'October 10th 2021',
+  time:'5 PM',
+  entry:'Artificial Intelligence',
+  assigned:'Advin Netto'
+
+},
+{
+  day:'October 9th 2021',
+  time:'7 PM',
+  entry:'Artificial Intelligence',
+  assigned:'Advin Netto'
+
+},
+{
+  day:'October 9th 2021',
+  time:'7 PM',
+  entry:'Artificial Intelligence',
+  assigned:'Advin Netto'
+
+},
+{
+  day:'October 11th 2021',
+  time:'7 PM',
+  entry:'Artificial Intelligence',
+  assigned:'Advin Netto'
+
+}
+]
 function App() {
+  const [value, onChange] = useState(new Date());
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Calendar
+       className="calendar"
+        onChange={onChange}
+        value={value}
+      />
+      <Events  events={events} day={moment(value).format('MMMM Do YYYY')} />
+      <Summary events={events} day={moment(value).format('MMMM Do YYYY')}/>
     </div>
   );
 }
