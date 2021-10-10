@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Techsurf2021/static/css/main.dba6f132.chunk.css",
-    "main.js": "/Techsurf2021/static/js/main.f10bfe98.chunk.js",
-    "main.js.map": "/Techsurf2021/static/js/main.f10bfe98.chunk.js.map",
+    "main.css": "/Techsurf2021/static/css/main.70339658.chunk.css",
+    "main.js": "/Techsurf2021/static/js/main.ca2bf092.chunk.js",
+    "main.js.map": "/Techsurf2021/static/js/main.ca2bf092.chunk.js.map",
     "runtime-main.js": "/Techsurf2021/static/js/runtime-main.d224f687.js",
     "runtime-main.js.map": "/Techsurf2021/static/js/runtime-main.d224f687.js.map",
     "static/css/2.8cebfa1f.chunk.css": "/Techsurf2021/static/css/2.8cebfa1f.chunk.css",
-    "static/js/2.b69845a3.chunk.js": "/Techsurf2021/static/js/2.b69845a3.chunk.js",
-    "static/js/2.b69845a3.chunk.js.map": "/Techsurf2021/static/js/2.b69845a3.chunk.js.map",
+    "static/js/2.b434333c.chunk.js": "/Techsurf2021/static/js/2.b434333c.chunk.js",
+    "static/js/2.b434333c.chunk.js.map": "/Techsurf2021/static/js/2.b434333c.chunk.js.map",
     "index.html": "/Techsurf2021/index.html",
     "static/css/2.8cebfa1f.chunk.css.map": "/Techsurf2021/static/css/2.8cebfa1f.chunk.css.map",
-    "static/css/main.dba6f132.chunk.css.map": "/Techsurf2021/static/css/main.dba6f132.chunk.css.map",
-    "static/js/2.b69845a3.chunk.js.LICENSE.txt": "/Techsurf2021/static/js/2.b69845a3.chunk.js.LICENSE.txt"
+    "static/css/main.70339658.chunk.css.map": "/Techsurf2021/static/css/main.70339658.chunk.css.map",
+    "static/js/2.b434333c.chunk.js.LICENSE.txt": "/Techsurf2021/static/js/2.b434333c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d224f687.js",
     "static/css/2.8cebfa1f.chunk.css",
-    "static/js/2.b69845a3.chunk.js",
-    "static/css/main.dba6f132.chunk.css",
-    "static/js/main.f10bfe98.chunk.js"
+    "static/js/2.b434333c.chunk.js",
+    "static/css/main.70339658.chunk.css",
+    "static/js/main.ca2bf092.chunk.js"
   ]
 }
