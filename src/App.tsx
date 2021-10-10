@@ -7,7 +7,6 @@ import moment from 'moment';
 
 
 
-
 const events=[
   {
       day:'October 9th 2021',
@@ -38,7 +37,7 @@ const events=[
 
 },
 {
-  day:'October 11th 2021',
+  day:'October 28th 2021',
   time:'7 PM',
   entry:'Artificial Intelligence',
   assigned:'Advin Netto'
@@ -54,7 +53,9 @@ const App:React.FC=()=> {
        className="calendar"
         onChange={onChange}
         value={value}
-        
+        tileClassName={({date}) => {
+          return events.find(x=>x.day===moment(date).format('MMMM Do YYYY').toString())?'highlight':'';
+        }}
       />
       <Events  events={events} day={moment(value).format('MMMM Do YYYY')} />
       <Summary events={events} day={moment(value).format('MMMM Do YYYY')}/>
