@@ -1,9 +1,12 @@
-import React,{useState} from 'react';
+import React,{ useState} from 'react';
 import Events from './components/Events';
 import Summary from './components/Summary';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import moment from 'moment';
+
+
+
 
 const events=[
   {
@@ -42,14 +45,16 @@ const events=[
 
 }
 ]
-function App() {
+const App:React.FC=()=> {
   const [value, onChange] = useState(new Date());
+  
   return (
     <div className="App">
       <Calendar
        className="calendar"
         onChange={onChange}
         value={value}
+        
       />
       <Events  events={events} day={moment(value).format('MMMM Do YYYY')} />
       <Summary events={events} day={moment(value).format('MMMM Do YYYY')}/>

@@ -8,8 +8,8 @@ interface Props {
 const Summary:React.FC<Props> = ({events,day}) => {
     const [filteredEvents,setFilteredEvents]=useState(events);
     useEffect(() => {
-        let x=events.filter(item=>item.day===day);
-        setFilteredEvents(x);
+        
+        setFilteredEvents(events.filter(item=>item.day===day));
         
     }, [day,events])
    

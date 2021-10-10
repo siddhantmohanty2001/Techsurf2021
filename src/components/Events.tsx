@@ -13,8 +13,8 @@ const times=['12 AM','1 AM','2 AM','3 AM','4 AM','5 AM','6 AM','7 AM','8 AM','9 
 const Events:React.FC<Props> = ({events,day}) => {
     const [filteredEvents,setFilteredEvents]=useState(events);
     useEffect(() => {
-        let x=events.filter(item=>item.day===day);
-        setFilteredEvents(x);
+        
+        setFilteredEvents(events.filter(item=>item.day===day));
         
     }, [day,events])
     
